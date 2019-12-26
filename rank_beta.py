@@ -43,7 +43,7 @@ for number in range(count):
                         myList[doubleCheck[0]] += 1
                         switch = True
                     elif random.randint(2,4) == 4 and timeSaver == False:
-
+                        '''
                         #essentially the transative property. if one listItem (listItem1) was ranked above another (let's call it listItem2)
                         for each2 in pastDecisions: #all listItems (eg [listItem3, listItem4]) that listItem2 was ranked above
                             for all2 in pastDecisions[each2]: #listItem1 is ranked above listItems 3 and 4
@@ -51,7 +51,8 @@ for number in range(count):
                                     pastDecisions[each] += [all2] #so essentially just the transative property, unfortunately currently makes it very slow
                                     switch = True
                                     timeSaver == True
-                                            
+                                    #right now, it's still too slow, so this is optional
+                        '''                  
             #Comparing and picking one of two lines from text document
             if switch == False:
                 myPick = input(str(matchup) + " 1 or 2?")
