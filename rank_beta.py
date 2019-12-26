@@ -6,7 +6,7 @@ count = 0
 pastDecisions = {} #pastDecisions = {winningPick: [losingPick1, losingPick2, etc]}
 timeSaver = True
 #Taking in a list from text document and turning it into a workable dictionary
-unRanked = open("list b.txt", "r").readlines()
+unRanked = open("unRanked.txt", "r").readlines()
 newLine = '\n'
 for unRank in unRanked:
     count += 1
